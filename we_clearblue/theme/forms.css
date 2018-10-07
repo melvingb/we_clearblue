@@ -47,14 +47,14 @@ dd label {
 input,
 select,
 textarea,
-#message-box textarea {
+.message-box textarea {
 	background: #fff;
 	line-height: 18px;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
 
-#message-box textarea {
+.message-box textarea {
 	color: #414141;
 	line-height: 21px;
 	font-size: 14px;
@@ -138,8 +138,8 @@ dd select {
 	width: auto !important;
 }
 
-#register .inputbox,
-#login .inputbox {
+.register .inputbox,
+.login .inputbox {
 	width: 50% !important;
 }
 
@@ -219,18 +219,18 @@ input.search {
 	background: none;
 }
 
-.section-search #keywords {
+.section-search .keywords {
 	margin-bottom: 5px;
 }
 
 /* Margin for forgotten password link */
-#login #password {
+.login .password {
 	margin-bottom: 10px;
 }
 
 /* UCP */
-#timezone,
-#dateformat {
+.timezone,
+..dateformat {
 	margin-top: 8px !important;
 }
 
@@ -245,20 +245,20 @@ input.search {
 	margin-left: 23%;
 }
 
-#format-buttons {
+.format-buttons {
 	margin-bottom: 6px;
 }
 
-#smiley-box {
+.smiley-box {
 	width: 19%;
 }
 
-#options-panel,
-#attach-panel,
-#poll-panel {
+.options-panel,
+.attach-panel,
+.poll-panel {
 	padding-top: 12px;
 }
 
-.pmlist #username_list {
+.pmlist .username_list {
 	height: 78px;
 }

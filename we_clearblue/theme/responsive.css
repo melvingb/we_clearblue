@@ -10,10 +10,12 @@ h1 {
 	font-size: 36px;
 }
 
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+
 /**
  * Structure
  */
-#wrap {
+.wrap {
 	padding: 0;
 }
 
@@ -36,6 +38,7 @@ h1 {
  * dashboard reduced to single dropdown (see navbar_responsive_header.html).
  */
 .inventea-user-menu {
+	color: #105289;
 	margin-right: 36px !important;
 }
 
@@ -135,12 +138,6 @@ ul.topiclist dd.redirect {
 
 .forabg ul.topiclist li.row:nth-child(even) dd.lastpost {
 	background-color: #e4ebf2;
-}
-
-@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
-	ul.topiclist.forums dd.lastpost {
-		display: none;
-	}
 }
 
 /**
@@ -263,4 +260,33 @@ input.tiny {
 #register .inputbox,
 #login .inputbox {
 	width: 100% !important;
+}
+
+/* Show button in responsive mode */
+#notification_list_button span, #private_message_text span {
+	display: none;
+}
+
+#notification_list_button:before {
+	font:normal normal normal 14px/1 FontAwesome;
+	content: "\f0f3";
+	text-decoration: none !important;
+}
+
+#private_message_text:before {
+	font:normal normal normal 14px/1 FontAwesome;
+	content: "\f01c";
+	text-decoration: none !important;
+}
+
+ul.linklist .small-icon > a {
+    padding: 0 0 0 5px;
+}
+
+}
+
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+	ul.topiclist.forums dd.lastpost {
+		display: none;
+	}
 }

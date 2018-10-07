@@ -1,0 +1,57 @@
+		<div class="inventea-widgets-wrapper">
+			<!-- IF S_ENABLE_FEEDS -->
+				<div class="inventea-widget inventea-list-widget">
+					<h4 class="inventea-widget-title">{L_FEED}</h4>
+
+					<ul class="inventea-widget-links">
+						<!-- IF S_ENABLE_FEEDS_OVERALL --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_index') }}" title="{L_FEED} - {SITENAME}">{SITENAME}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_NEWS --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_news') }}" title="{L_FEED} - {L_FEED_NEWS}">{L_FEED_NEWS}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_FORUMS --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_forums') }}" title="{L_FEED} - {L_ALL_FORUMS}">{L_ALL_FORUMS}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_TOPICS --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_topics') }}" title="{L_FEED} - {L_FEED_TOPICS_NEW}">{L_FEED_TOPICS_NEW}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_TOPICS_ACTIVE --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_topics_active') }}" title="{L_FEED} - {L_FEED_TOPICS_ACTIVE}">{L_FEED_TOPICS_ACTIVE}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_FORUM and S_FORUM_ID --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_forum', { forum_id : S_FORUM_ID } ) }}" title="{L_FEED} - {L_FORUM} - {FORUM_NAME}">{L_FORUM} - {FORUM_NAME}</a></li><!-- ENDIF -->
+						<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID --><li class="inventea-widget-links-item"><i class="icon fa fa-rss fa-fw"></i><a href="{{ path('phpbb_feed_topic', { topic_id : S_TOPIC_ID } ) }}" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}">{L_TOPIC} - {TOPIC_TITLE}</a></li><!-- ENDIF -->
+					</ul>
+				</div>
+			<!-- ENDIF -->
+
+			<div class="inventea-widget inventea-list-widget">
+				<h4 class="inventea-widget-title">{L_GOTO_PAGE}</h4>
+
+				<ul class="inventea-widget-links">
+					<!-- IF U_WATCH_FORUM_LINK and not S_IS_BOT --><li class="inventea-widget-links-item"><i class="icon fa fa-star fa-fw"></i><a href="{U_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}" data-ajax="toggle_link" data-toggle-text="{S_WATCH_FORUM_TOGGLE}" data-toggle-url="{U_WATCH_FORUM_TOGGLE}">{S_WATCH_FORUM_TITLE}</a></li><!-- ENDIF -->
+					<!-- IF S_DISPLAY_SEARCH --><li class="inventea-widget-links-item"><i class="icon fa fa-search fa-fw"></i><a href="{U_SEARCH}" title="{L_SEARCH}">{L_SEARCH_ADV}</a></li><!-- ENDIF -->
+					<!-- IF S_REGISTERED_USER --><li class="inventea-widget-links-item"><i class="icon fa fa-user fa-fw"></i><a href="{U_PROFILE}" title="{L_PROFILE}">{L_PROFILE}</a></li><!-- ENDIF -->
+					<!-- IF U_MCP --><li class="inventea-widget-links-item"><i class="icon fa fa-tachometer fa-fw"></i><a href="{U_MCP}" title="{L_MCP}">{L_MCP}</a></li><!-- ENDIF -->
+					<!-- IF U_ACP --><li class="inventea-widget-links-item"><i class="icon fa fa-cog fa-fw"></i><a class="footer-link text-strong" href="{{ U_ACP }}">{{ lang('ACP') }}</a></li><!-- ENDIF -->
+					<!-- IF U_CONTACT_US --><li class="inventea-widget-links-item"><i class="icon fa fa-envelope fa-fw"></i><a href="{U_CONTACT_US}">{L_CONTACT_US}</a></li><!-- ENDIF -->
+					<!-- IF not S_IS_BOT --><li class="inventea-widget-links-item"><i class="icon fa fa-trash fa-fw"></i><a href="{U_DELETE_COOKIES}" data-ajax="true" data-refresh="true">{L_DELETE_COOKIES}</a></li><!-- ENDIF -->
+					<li class="inventea-widget-links-item"><i class="icon fa fa-clock-o fa-fw"></i>{S_TIMEZONE}</li>
+				</ul>
+			</div>
+
+			<!--
+			Short description about your website or project. If you don't like to display
+			this widget, just remove the whole <div> (lines 46-63) or comment it.
+			Feel free to modify the social buttons below. For more icons visit:
+			http://fortawesome.github.io/Font-Awesome/icons/#brand
+			-->
+			<div class="inventea-widget inventea-text-widget">
+				<h4 class="inventea-widget-title">About us</h4>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor lectus quis mattis aliquet.
+				Cras in nibh et eros porttitor facilisis. Nunc egestas eget leo vel dapibus. Cum sociis natoque
+				penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti.
+				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				Nunc rutrum dui ipsum, ac tincidunt felis pharetra sed. Aenean viverra sagittis interdum.</p>
+
+				<ul class="inventea-social-icons">
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					<li class="inventea-social-icons-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>

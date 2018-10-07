@@ -1,15 +1,14 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
-	Style name:			we_universal
-	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Style name:			we_clearblue
+	Based on style:		prosilver (the default phpBB 3.2.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		phpBB Limited ( https://www.phpbb.com/ )
 	Modified by:		INVENTEA ( https://inventea.com/ )
     --------------------------------------------------------------
 */
 
-@import url("font-awesome.min.css");
-@import url("common.css");
-@import url("content.css");
-@import url("cp.css");
-@import url("forms.css");
+@import url("common.css?v=3.2");
+@import url("content.css?v=3.2");
+@import url("cp.css?v=3.2");
+@import url("forms.css?v=3.2");
+@import url("responsive.css?v=3.2");
