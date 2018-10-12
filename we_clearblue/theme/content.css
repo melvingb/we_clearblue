@@ -431,6 +431,7 @@ dl.faq dt {
 	border-top-left-radius: 7px;
 	border-bottom-left-radius: 7px;
 	color: #525252;
+	border-right: 1px solid #FFFFFF;
 	vertical-align: top;
 }
 
@@ -731,7 +732,7 @@ dl.codebox code {
 }
 
 blockquote cite:before, .uncited:before {
-	padding: 7px;
+	padding-right: 5x;
 }
 
 blockquote {
