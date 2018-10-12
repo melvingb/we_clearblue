@@ -1,7 +1,7 @@
-![we_clearblue for phpBB 3.0.12](http://inventea.com/images/we_clearblue.png)
+![we_clearblue for phpBB 3.2.3](http://inventea.com/images/we_clearblue.png)
 
 
-[we_clearblue](http://inventea.com/en/projects/we_clearblue) style for phpBB
+[we_clearblue](http://xtrato.net/we_clearblue.php) style for phpBB
 ============================================================================
 
 we_clearblue is a modern style in pastel colours with integrated image slider
@@ -14,16 +14,11 @@ Based on prosilver and built using template inheritance that simplifies
 customising and updating. All new CSS classes are prefixed with `inventea-`
 namespace and grouped in separate `we_clearblue.css` file.
 
-Before reporting an issue please visit our
-[documentation](http://inventea.com/en/projects/we_clearblue/documentation) and
-[FAQ](http://inventea.com/en/projects/we_clearblue/faq) which covers common
-problems and questions.
 
-
-Demo
+Download
 ----
 
-http://inventea.com/phpbb/we_clearblue
+http://xtrato.net/we_clearblue.php
 
 
 Installation
@@ -39,6 +34,5 @@ click *Install* on the list of uninstalled styles. In the next step check
 Assets
 ------
 
-* [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.3.0
 * [jQuery](http://jquery.com) 2.1.3
 * [slick](http://kenwheeler.github.io/slick/) 1.3.15
