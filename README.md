@@ -1,7 +1,7 @@
 ![we_clearblue for phpBB 3.2.3](http://inventea.com/images/we_clearblue.png)
 
 
-[we_clearblue](http://xtrato.net/we_clearblue.php) style for phpBB
+[we_clearblue](http://forum.melvingarcia.com/we_clearblue.php) style for phpBB
 ============================================================================
 
 we_clearblue is a modern style in pastel colours with integrated image slider
@@ -18,15 +18,15 @@ namespace and grouped in separate `we_clearblue.css` file.
 Download
 ----
 
-http://xtrato.net/we_clearblue.php
+http://forum.melvingarcia.com/we_clearblue.php
 
 
 Installation
 ------------
 
-Copy `we_clearblue/` directory (it should directly contain `imageset/`,
-`template/`, `theme/` and `style.cfg`) to `styles/` directory from your phpBB
-installation. Next go to *Administration Control Panel*, open *STYLES* tab and
+Copy `we_clearblue/` directory (it should directly contain `template/`,
+`theme/` and `style.cfg`) to `styles/` directory from your phpBB
+installation. Next go to *Administration Control Panel*, open *Customisation* tab and
 click *Install* on the list of uninstalled styles. In the next step check
 *Make default style* option and click *Submit*.
 

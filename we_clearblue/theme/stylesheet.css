@@ -12,3 +12,11 @@
 @import url("cp.css?v=3.2");
 @import url("forms.css?v=3.2");
 @import url("responsive.css?v=3.2");
+
+/*	Custom colours
+	---------------------------------------------------------------
+*/
+
+.cp-main .pm {
+    background-color: #f4f4f4;
+}
