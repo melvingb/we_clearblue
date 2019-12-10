@@ -1,17 +1,17 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
 	Style name:			we_clearblue
-	Based on style:		prosilver (the default phpBB 3.2.x style)
+	Based on style:		prosilver (the default phpBB 3.3.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		INVENTEA ( https://inventea.com/ )
+	Modified by:		Melvin García ( http://www.melvingarcia.com/ )
     --------------------------------------------------------------
 */
 
-@import url("common.css?v=3.2");
-@import url("content.css?v=3.2");
-@import url("cp.css?v=3.2");
-@import url("forms.css?v=3.2");
-@import url("responsive.css?v=3.2");
+@import url("common.css?v=3.3");
+@import url("content.css?v=3.3");
+@import url("cp.css?v=3.3");
+@import url("forms.css?v=3.3");
+@import url("responsive.css?v=3.3");
 
 /*	Custom colours
 	---------------------------------------------------------------

@@ -13,14 +13,17 @@
 		<div class="inventea-breadcrumbs-container">
 			<ul class="linklist inventea-breadcrumbs">
 				<!-- DEFINE $MICRODATA = ' itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""' -->
+				{% set navlink_position = 1 %}
 				<!-- EVENT overall_header_breadcrumbs_before -->
 				<li class="small-icon icon-home" data-skip-responsive="true">
-					{L_JUMP_TO}: <!-- IF U_SITE_HOME --><span class="crumb"{$MICRODATA}><a href="{U_SITE_HOME}" data-navbar-reference="home" itemprop="url"><span itemprop="title">{L_SITE_HOME}</span></a></span><!-- ENDIF -->
+					{L_JUMP_TO}: <!-- IF U_SITE_HOME --><span class="crumb" {$MICRODATA}><a href="{U_SITE_HOME}" itemtype="https://schema.org/Thing" itemscope itemprop="item" data-navbar-reference="home"><span itemprop="name">{L_SITE_HOME}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span><!-- ENDIF -->
 					<!-- EVENT overall_header_breadcrumb_prepend -->
-					<span class="crumb"{$MICRODATA}><a href="{U_INDEX}" accesskey="h" data-navbar-reference="index" itemprop="url"><span itemprop="title">{L_INDEX}</span></a></span>
+					<span class="crumb" {$MICRODATA}><a href="{U_INDEX}" itemtype="https://schema.org/Thing" itemscope itemprop="item" accesskey="h" data-navbar-reference="index"><span itemprop="name">{L_INDEX}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span>
 					<!-- BEGIN navlinks -->
+						{% set NAVLINK_NAME = navlinks.BREADCRUMB_NAME | default(navlinks.FORUM_NAME) %}
+						{% set NAVLINK_LINK = navlinks.U_BREADCRUMB | default(navlinks.U_VIEW_FORUM) %}					
 						<!-- EVENT overall_header_navlink_prepend -->
-						<span class="crumb"{$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->><a href="{navlinks.U_VIEW_FORUM}" itemprop="url"><span itemprop="title">{navlinks.FORUM_NAME}</span></a></span>
+						<span class="crumb" {$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->><a href="{{ NAVLINK_LINK }}" itemtype="https://schema.org/Thing" itemscope itemprop="item"><span itemprop="name">{{ NAVLINK_NAME }}</span></a><meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" /></span>
 						<!-- EVENT overall_header_navlink_append -->
 					<!-- END navlinks -->
 					<!-- EVENT overall_header_breadcrumb_append -->
@@ -42,7 +45,7 @@
 		</p>
 		<!-- ENDIF -->
 		<!-- EVENT overall_footer_copyright_append -->
-		<p class="footer-row">
+		<p class="footer-row" role="menu">
 			<a class="footer-link" href="{{ U_PRIVACY }}" title="{{ lang('PRIVACY_LINK') }}" role="menuitem">
 				<span class="footer-link-text">{{ lang('PRIVACY_LINK') }}</span>
 			</a>
@@ -78,7 +81,7 @@
 </div>
 
 <script src="{T_JQUERY_LINK}"></script>
-<!-- IF S_ALLOW_CDN --><script>window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
+<!-- IF S_ALLOW_CDN --><script>window.jQuery || document.write('\x3Cscript src="{T_ASSETS_PATH}/javascript/jquery-3.4.1.min.js?assets_version={T_ASSETS_VERSION}">\x3C/script>');</script><!-- ENDIF -->
 <script src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
 <!-- INCLUDEJS forum_fn.js -->
 <!-- INCLUDEJS ajax.js -->
