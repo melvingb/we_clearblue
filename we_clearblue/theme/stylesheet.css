@@ -20,3 +20,7 @@
 .cp-main .pm {
     background-color: #f4f4f4;
 }
+
+.dropdown-extended .header .header_settings {
+	font-size: 10px;
+}
